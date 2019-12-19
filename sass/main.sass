@@ -1,0 +1,31 @@
+@import './fonts/fonts'
+
+*
+   margin: 0
+   padding: 0
+   box-sizing: border-box
+a
+   text-decoration: none
+   text-align: center
+   font-family: Open Sans Light Italic, Arial, sans-serif
+   font-size: 1.2em
+ul
+   list-style: none
+   
+.header
+   &-wrap
+      width: 100%
+      height: auto
+      background-color: #000000
+   &-menu
+      width: 100%
+      display: grid
+      grid-template: auto / repeat(3, 1fr)
+      justify-items: center
+      align-items: center
+      a
+         display: block
+         color: #ffffff
+         padding: 15px 0px
+         &:hover
+            text-shadow: 2px 2px 5px #ffffff

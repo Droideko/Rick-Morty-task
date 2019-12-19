@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Open Sans Light Italic';
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.eot");
+  src: url("../fonts/OpenSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-LightItalic.woff") format("woff"), url("../fonts/OpenSans-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-family: Open Sans Light Italic, Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-wrap {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+}
+
+.header-menu {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+  -ms-grid-columns: (1fr)[3];
+      grid-template: auto/repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu a {
+  display: block;
+  color: #ffffff;
+  padding: 15px 0px;
+}
+
+.header-menu a:hover {
+  text-shadow: 2px 2px 5px #ffffff;
+}
+/*# sourceMappingURL=main.css.map */
