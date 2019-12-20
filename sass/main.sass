@@ -4,6 +4,8 @@
    margin: 0
    padding: 0
    box-sizing: border-box
+body
+   background-color: #f4f3f8
 a
    text-decoration: none
    text-align: center
@@ -29,3 +31,53 @@ ul
          padding: 15px 0px
          &:hover
             text-shadow: 2px 2px 5px #ffffff
+
+section
+   max-width: 1200px
+   height: auto
+   margin: 0px auto
+
+.container
+   width: 100%
+   height: auto
+   margin-top: 20px
+
+.pagination
+   width: 100%
+   height: auto
+   display: grid
+   grid-template-columns: repeat(5, minmax(60px, 110px))
+   justify-content: center
+   &__item
+      display: inline-block
+      font-family: Open Sans Light Italic, Arial, sans-serif
+      font-size: 1.2em
+      text-align: center
+      margin: 0px 3px
+      padding: 13px 28px
+      border: 1px solid #000000
+      border-radius: 5px/4px
+      cursor: pointer
+      transition: border .3s ease
+      &-active
+         border-color: red
+      &:hover
+         border-color: green
+   &-container
+      margin-top: 20px
+      display: grid
+      justify-items: center
+      table
+         background-color: #000000
+         tr
+            td
+               padding: 5px 10px                           
+               color: #ffffff
+               text-align: center
+               font-size: 1.2em
+               font-family: Open Sans Light Italic, Arial, sans-serif
+         img
+            max-width: 250px
+            height: auto
+            object-fit: cover
+      

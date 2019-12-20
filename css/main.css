@@ -14,6 +14,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #f4f3f8;
+}
+
 a {
   text-decoration: none;
   text-align: center;
@@ -52,5 +56,77 @@ ul {
 
 .header-menu a:hover {
   text-shadow: 2px 2px 5px #ffffff;
+}
+
+section {
+  max-width: 1200px;
+  height: auto;
+  margin: 0px auto;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.pagination {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(60px, 110px))[5];
+      grid-template-columns: repeat(5, minmax(60px, 110px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagination__item {
+  display: inline-block;
+  font-family: Open Sans Light Italic, Arial, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0px 3px;
+  padding: 13px 28px;
+  border: 1px solid #000000;
+  border-radius: 5px/4px;
+  cursor: pointer;
+  -webkit-transition: border .3s ease;
+  transition: border .3s ease;
+}
+
+.pagination__item-active {
+  border-color: red;
+}
+
+.pagination__item:hover {
+  border-color: green;
+}
+
+.pagination-container {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.pagination-container table {
+  background-color: #000000;
+}
+
+.pagination-container table tr td {
+  padding: 5px 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  font-family: Open Sans Light Italic, Arial, sans-serif;
+}
+
+.pagination-container table img {
+  max-width: 250px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */
