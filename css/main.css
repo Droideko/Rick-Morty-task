@@ -104,6 +104,25 @@ section {
   border-color: green;
 }
 
+.pagination__sort-button {
+  font-family: Open Sans Light Italic, Arial, sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f4f3f8;
+  cursor: pointer;
+  padding: 8px 12px;
+  -webkit-transition: border .3s ease, color .3s ease;
+  transition: border .3s ease, color .3s ease;
+}
+
+.pagination__sort-button:hover {
+  border-color: green;
+  color: green;
+}
+
 .pagination-container {
   margin-top: 20px;
   display: -ms-grid;
