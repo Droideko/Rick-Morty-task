@@ -75,8 +75,8 @@ section {
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(60px, 110px))[5];
-      grid-template-columns: repeat(5, minmax(60px, 110px));
+  -ms-grid-columns: (minmax(60px, 190px))[3];
+      grid-template-columns: repeat(3, minmax(60px, 190px));
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -85,7 +85,7 @@ section {
 .pagination__item {
   display: inline-block;
   font-family: Open Sans Light Italic, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
   margin: 0px 3px;
   padding: 13px 28px;
@@ -106,7 +106,7 @@ section {
 
 .pagination__sort-button {
   font-family: Open Sans Light Italic, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 10px;
   border: 1px solid #000000;
   border-radius: 5px;
@@ -140,6 +140,10 @@ section {
   text-align: center;
   font-size: 1.2em;
   font-family: Open Sans Light Italic, Arial, sans-serif;
+}
+
+.pagination-container table tr td:nth-last-child(1) {
+  width: 250px;
 }
 
 .pagination-container table img {
