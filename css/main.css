@@ -40,8 +40,8 @@ ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-  -ms-grid-columns: (1fr)[3];
-      grid-template: auto/repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template: auto / 1fr;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -148,8 +148,64 @@ section {
 
 .pagination-container table img {
   max-width: 250px;
+  cursor: pointer;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.modal-container {
+  position: relative;
+  width: 80%;
+  margin: 10% auto;
+  background: #000;
+  color: #ffffff;
+}
+
+.modal-container__close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.modal-content img {
+  margin-top: 30px;
+  max-width: 300px;
+}
+
+.modal-content__info h4 {
+  font-size: 2em;
+  font-family: Open Sans Light Italic, Arial, sans-serif;
+  margin: 10px auto;
+}
+
+.modal-content__info p {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.modal-content__info p:nth-last-child(1) {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */
