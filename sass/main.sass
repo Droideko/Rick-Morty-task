@@ -22,7 +22,7 @@ ul
    &-menu
       width: 100%
       display: grid
-      grid-template: auto / repeat(3, 1fr)
+      grid-template: auto / 1fr
       justify-items: center
       align-items: center
       a
@@ -94,6 +94,49 @@ section
                   width: 250px
          img
             max-width: 250px
+            cursor: pointer
             height: auto
             object-fit: cover
       
+.modal
+   height: 100%
+   width: 100%
+   display: none
+   background-color: rgba(0,0,0, .7)
+   position: fixed
+   left: 0
+   top: 0
+   z-index: 1
+   &-container
+      position: relative
+      width: 80%
+      margin: 10% auto
+      background: #000
+      color: #ffffff
+      &__close
+         position: absolute
+         top: 0
+         right: 10px
+         font-size: 2em
+         font-weight: bold
+         cursor: pointer
+   &-content
+      display: grid
+      justify-items: center
+      img
+         margin-top: 30px
+         max-width: 300px
+      &__info
+         h4
+            font-size: 2em
+            font-family: Open Sans Light Italic, Arial, sans-serif
+            margin: 10px auto
+         p
+            font-size: 1.4em
+            text-align: center
+            margin: 5px auto
+            &:nth-last-child(1)
+               margin-bottom: 40px
+
+
+
