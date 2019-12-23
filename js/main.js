@@ -22,7 +22,7 @@ async function getPagination(url){
    getCharacters(characters);
 
    sortBtn.addEventListener('click', e => {
-      characters = characters.sort((a, b) => a.name.charCodeAt(0) - b.name.charCodeAt(0));
+      characters = characters.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1);
       table.innerHTML = '';
       getCharacters(characters);
    });  
